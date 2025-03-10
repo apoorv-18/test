@@ -58,3 +58,5 @@ app.get("/api/weather/forecast/:city", async (req, res) => {
 app.listen(PORT, () => {
     console.log(`Server running on http://localhost:${PORT}`);
 });
+
+module.export = app;
