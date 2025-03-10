@@ -9,6 +9,10 @@ const BASE_URL = "http://api.weatherapi.com/v1";
 
 app.use(express.json());
 
+app.get("/", (req, res) => {
+    res.send("Weather API is running!");
+  });
+
 // GET Current Weather
 app.get("/api/weather/:city", async (req, res) => {
     try {
